@@ -1,0 +1,153 @@
+
+/* ========================================
+   SERVICE CAR - COMPONENTES REUTILIZÁVEIS
+======================================== */
+
+/* Botões */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: var(--borda-radius);
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: var(--transicao);
+}
+
+.btn-primary {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+.btn-primary:hover {
+    background-color: #161B65;
+}
+
+.btn-secondary {
+    background-color: var(--cor-branca);
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
+}
+
+.btn-secondary:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+.btn-danger {
+    background-color: var(--cor-erro);
+    color: var(--cor-branca);
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-block {
+    width: 100%;
+}
+
+/* Cards */
+.card {
+    background-color: var(--cor-branca);
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--borda-radius);
+    padding: 24px;
+    box-shadow: var(--sombra);
+}
+
+.card-title {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.card-description {
+    color: var(--cor-texto);
+    margin-bottom: 16px;
+}
+
+/* Formulários */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: var(--cor-primaria);
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--borda-radius);
+    background-color: var(--cor-branca);
+    color: var(--cor-texto);
+    transition: var(--transicao);
+}
+
+.form-control:focus {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 1px;
+}
+
+textarea.form-control {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* Mensagens do sistema */
+.alert {
+    padding: 14px 18px;
+    border-radius: var(--borda-radius);
+    margin-bottom: 20px;
+}
+
+.alert-success {
+    background-color: #D1E7DD;
+    color: #0F5132;
+}
+
+.alert-danger {
+    background-color: #F8D7DA;
+    color: #842029;
+}
+
+.alert-warning {
+    background-color: #FFF3CD;
+    color: #664D03;
+}
+
+/* Títulos de seções */
+.section-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+/* Seções */
+.section {
+    padding: 60px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .section {
+        padding: 35px 0;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .card {
+        padding: 16px;
+    }
+}
