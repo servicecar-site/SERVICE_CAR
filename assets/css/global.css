@@ -1,0 +1,98 @@
+
+/* ========================================
+   SERVICE CAR - CSS GLOBAL
+   Identidade visual e padrões do sistema
+======================================== */
+
+/* Variáveis globais */
+:root {
+    --cor-primaria: #00043E;
+    --cor-preta: #000000;
+    --cor-branca: #FFFFFF;
+    --cor-fundo: #F5F5F5;
+    --cor-texto: #333333;
+    --cor-borda: #DDDDDD;
+
+    --cor-sucesso: #198754;
+    --cor-erro: #DC3545;
+    --cor-alerta: #FFC107;
+
+    --fonte-principal: Arial, sans-serif;
+
+    --borda-radius: 8px;
+    --largura-container: 1200px;
+    --transicao: 0.3s ease;
+
+    --sombra: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Configurações gerais */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-size: 16px;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--cor-primaria);
+    line-height: 1.3;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagens */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Elementos de formulário */
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Container padrão */
+.container {
+    width: 90%;
+    max-width: var(--largura-container);
+    margin: 0 auto;
+}
+
+/* Acessibilidade */
+:focus-visible {
+    outline: 2px solid var(--cor-primaria);
+    outline-offset: 4px;
+}

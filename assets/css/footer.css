@@ -1,0 +1,81 @@
+
+/* ========================================
+   SERVICE CAR - FOOTER COMPARTILHADO
+======================================== */
+
+.site-footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+/* Estrutura principal */
+.footer-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Colunas */
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-logo {
+    color: var(--cor-branca);
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.footer-col h3 {
+    color: var(--cor-branca);
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.footer-col p,
+.footer-col a {
+    font-size: 14px;
+    color: #D1D5DB;
+}
+
+.footer-col a {
+    transition: var(--transicao);
+}
+
+.footer-col a:hover {
+    color: var(--cor-branca);
+    text-decoration: underline;
+}
+
+/* Direitos autorais */
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #D1D5DB;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+}
