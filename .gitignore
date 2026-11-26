@@ -1,0 +1,28 @@
+# Configuracoes sensiveis
+.env
+.env.*
+!.env.example
+/config/conexao.local.php
+
+# Configuracoes do editor
+.vscode/
+.idea/
+
+# Arquivos temporarios
+*.tmp
+*.log
+*.bak
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependencias
+node_modules/
+vendor/
+
+# Backups
+backups/
+*.zip
+*.rar
