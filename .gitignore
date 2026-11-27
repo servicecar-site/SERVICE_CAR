@@ -26,3 +26,6 @@ vendor/
 backups/
 *.zip
 *.rar
+
+/config/credenciais.php
+/teste_conexao.php
