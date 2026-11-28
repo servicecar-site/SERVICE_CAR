@@ -1,6 +1,10 @@
 
 <?php
+
+require_once __DIR__ . '/includes/auth.php';
+
 $base_url = '/SERVICE_CAR';
+
 ?>
 
 <!DOCTYPE html>
