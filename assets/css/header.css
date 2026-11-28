@@ -106,3 +106,21 @@
         width: 100%;
     }
 }
+
+/* USUÁRIO AUTENTICADO */
+
+.header-usuario {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--cor-primaria, #00043e);
+}
+
+.form-logout {
+    display: flex;
+    margin: 0;
+}
+
+.form-logout button {
+    font-family: inherit;
+    cursor: pointer;
+}
